@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>header}}
+    <title>Add Books</title>
+</head>
+<body>
+    {{>navbar}}
+        <div class="conatiner">
+            <form class="signup-form" action="/addbooks" method="POST">
+					<fieldset>
+						<legend>Add Books</legend>
+							<div class="form-group left">
+								<label for="Book_id"  class="label-title">Book_id</label>
+								<input type="text" id="Book_id" name="bookid" required>
+							</div>
+							<div class="form-group left">
+								<label for="Book_Name"  class="label-title">Book Name</label>
+								<input type="text" id="Book_Name" name="name">
+							</div>
+							
+							<div class="form-group left">
+								<label for="Publisher"  class="label-title">Publisher</label>
+								<input type="text" id="Publisher" name="publisher">
+							</div>
+							
+                            <div class="form-group left">
+								<label for="Page"  class="label-title"> Page</label>
+								<input type="number" id="Pages" name="pages">
+							</div>
+                            <div class="form-group left">
+								<label for="Quantity"  class="label-title"> Quantity</label>
+								<input type="number" id="Quantity" name="quantity">
+							</div>
+                            <div class="form-group left">
+								<label for="Price"  class="label-title"> Price</label>
+								<input type="number" id="Price" name="price">
+							</div>
+							<div class="form-group left">
+								<div class="col-sm-10 offset-sm-2">
+									<button class="btn btn-primary" type="submit">Add</button>
+                                    <button class="btn btn-secondary" type="submit">Cancel</button>
+								</div>
+							</div>
+					</fieldset>
+				</form>
+        </div>
+   
+				
+			
+
+</body>
+</html>

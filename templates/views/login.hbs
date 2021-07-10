@@ -1,0 +1,23 @@
+<html>
+
+<head>
+ {{>header}}
+  <title>Sign in</title>
+</head>
+
+<body>
+    {{>navbar}}
+  <div class="main">
+    <p class="sign" align="center">Log in</p>
+    <form class="form1" action="/login" method="POST">
+      <input class="un " type="text" align="center" placeholder="Email" name="email">
+      <input class="pass" type="password" align="center" placeholder="Password" name="password">
+      <button class="submit" align="center" type="submit">Sign in</button>
+      <button class="forgot" align="center" type="submit"><a href="#">Forgot Password?</button>
+            
+                
+    </div>
+     
+</body>
+
+</html>

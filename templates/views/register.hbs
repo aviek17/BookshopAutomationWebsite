@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   {{>header}}
+   <title>Registration</title>
+  </head>
+  <body>
+    <div>
+      {{>navbar}}
+    </div>
+    <div class="container">
+       <form class="signup-form" action="/register" method="POST">
+
+      <!-- form header -->
+      <div class="form-header">
+        <h1>Create Account</h1>
+      </div>
+
+      <!-- form body -->
+      <div class="form-body">
+
+        <!-- Firstname and Lastname -->
+        <div class="horizontal-group">
+          <div class="form-group left">
+            <label for="firstname" class="label-title">First name *</label>
+            <input type="text" name="firstname" class="form-input" placeholder="enter your first name" required="required" />
+          </div>
+          <div class="form-group right">
+            <label for="lastname" class="label-title">Last name</label>
+            <input type="text" name="lastname" class="form-input" placeholder="enter your last name" />
+          </div>
+        </div>
+
+        <!-- Email -->
+        <div class="form-group">
+          <label for="email" class="label-title">Email*</label>
+          <input type="email" name="email" class="form-input" placeholder="enter your email" required="required">
+        </div>
+
+        <!-- Passwrod and confirm password -->
+        <div class="horizontal-group">
+          <div class="form-group left">
+            <label for="password" class="label-title">Password *</label>
+            <input type="password" name="password" class="form-input" placeholder="enter your password" required="required">
+          </div>
+          <div class="form-group right">
+            <label for="confirm-password" class="label-title">Confirm Password *</label>
+            <input type="password" class="form-input" name="confirmpassword" placeholder="enter your password again" required="required">
+          </div>
+        </div>
+
+        {{!-- Age and phone --}}
+        <div class="horizontal-group">
+          <div class="form-group left">
+            <label for="age" class="label-title">Age *</label>
+            <input type="number" name="age" class="form-input" placeholder="enter your age" required="required">
+          </div>
+          <div class="form-group right">
+            <label for="phone" class="label-title">Phone No*</label>
+            <input type="number" class="form-input" name="phone" placeholder="enter your phone number" required="required">
+          </div>
+        </div>
+
+        <!-- Gender -->
+        <div class="horizontal-group">
+          <div class="form-group left">
+            <label class="label-title">Gender:</label>
+            <div class="input-group">
+              <label for="male"><input type="radio" name="gender" value="male" name="male"> Male </label>
+              <label for="female"><input type="radio" name="gender" value="female" name="female"> Female</label>
+            </div>
+          </div>
+         
+        </div>
+
+        {{!-- Admin or Customer --}}
+
+         <div class="horizontal-group">
+          <div class="form-group left">
+            <label class="label-title">Role:</label>
+            <div class="input-group">
+              <label for="admin"><input type="radio" name="person" value="admin" name="male"> Admin </label>
+              <label for="customer"><input type="radio" name="person" value="customer" name="female"> Customer</label>
+            </div>
+          </div>
+         
+        </div>
+
+
+        <div class="form-footer">
+            {{!-- <span>* required</span> --}}
+            <button type="submit" class="btn" value="register">Create</button>
+        
+        </div>
+      </div>
+    </form>
+
+    {{!-- <!-- Script for range input label -->
+    <scriptname
+      function change() {
+      rangeLabel.innerText = experience.value + "K";
+      }
+    </script> --}}
+    
+   
+
+  </body>
+</html>

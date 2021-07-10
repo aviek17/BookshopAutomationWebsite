@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>header}}
+    <title>Search Book</title>
+</head>
+<body>
+    {{>navbar}}
+    <h1 class="home_h1">Search for books here</h1>
+    <form action="search" method="POST">
+      <div class="wrap">
+        <div class="search">
+          <input type="text" class="searchTerm" placeholder="What are you looking for?" name="search">
+            <button type="submit" class="searchButton">
+              <i class="fas fa-search"></i>
+            </button>
+        </div>
+      </div>
+    </form>
+   
+</body>
+</html>
